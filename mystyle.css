@@ -46,6 +46,8 @@ nav a:hover {
 section {
     padding: 20px;
     max-width: 800px;
+    align-items: center;
+    text-align: center;
     margin: 20px auto;
     background-color: #1F1F1F; 
     border-radius: 10px;
@@ -105,3 +107,17 @@ video {
     border: 2px solid #333;
     border-radius: 10px;
 }
+
+@media (min-width: 768px) {
+        section{
+            & video{
+                text-align: center;
+            }
+        }
+  }
+  @media (min-width: 360px) and (max-width: 640px) {
+    header nav {
+        font-size: 10px;
+    }
+
+  }
